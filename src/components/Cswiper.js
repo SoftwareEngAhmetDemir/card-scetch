@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 export default () => {
 
     function activeIndex(index) {
- 
+        $('.prev').attr('disabled', false);
         if (index === 0) {
             $('.prev').attr('disabled', true);
 
