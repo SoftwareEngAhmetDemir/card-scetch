@@ -11,26 +11,43 @@ import 'swiper/css/scrollbar';
 import $ from 'jquery';
 import { useEffect } from 'react';
 export default () => {
-   
-    const nextbtn = () => {
-        $('.prev').attr('disabled',false);
-       $(".swiper-button-next").click();
 
-       if( $('.swiper-pagination-bullet-active').is(':last-child')){
-        $('.next').attr('disabled',true);
+    function activeIndex(index) {
+ 
+        if (index === 0) {
+            $('.prev').attr('disabled', true);
+
+        }
+        $('.next').attr('disabled', false);
+        if ($('.swiper-pagination-bullet-active').is(':last-child')) {
+            $('.next').attr('disabled', true);
+            $('.prev').attr('disabled', false);
+        }
     }
+    function checknext() {
+        if ($('.swiper-pagination-bullet-active').is(':last-child')) {
+            $('.next').attr('disabled', true);
+        }
+    }
+    const nextbtn = () => {
+        $('.prev').attr('disabled', false);
+        $(".swiper-button-next").click();
+        checknext()
+    }
+    function checkprevbtn() {
+        $(".swiper-button-prev").click();
+        if ($('.swiper-pagination-bullet-active').attr('aria-label') === 'Go to slide 1') {
+            console.log('yes');
+            $('.prev').attr('disabled', true);
+        }
     }
     const prevbtn = () => {
-        $('.next').attr('disabled',false);
-       $(".swiper-button-prev").click();
-       if( $('.swiper-pagination-bullet-active').attr('aria-label')==='Go to slide 1'){
-           console.log('yes');
-           $('.prev').attr('disabled',true);
-       }
+        $('.next').attr('disabled', false);
+        return checkprevbtn()
     }
-   useEffect(()=>{
-    $('.prev').attr('disabled',true);
-   })
+    useEffect(() => {
+        $('.prev').attr('disabled', true);
+    })
     return (
         <div className='row align-items-center justify-content-center' style={{ height: '350px' }}>
             <div className='col-1 d-lg-block d-none'>
@@ -48,12 +65,12 @@ export default () => {
                     pagination={{ clickable: true }}
                     //   scrollbar={{ draggable: false }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    onSlideChange={(e) => activeIndex(e.activeIndex)}
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
                         },
-                       1000: {
+                        1000: {
                             slidesPerView: 2,
                         },
                         1400: {
@@ -61,7 +78,7 @@ export default () => {
                         },
                     }}
                 >
-                    {[1, 2].map((index,e) =>
+                    {[1, 2].map((index, e) =>
                         <>
                             <SwiperSlide>
                                 <div className='card-swiper'>
