@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Cswiper from './components/Cswiper';
+import Video from './components/Video';
 
 function App() {
 
@@ -72,6 +73,9 @@ function App() {
 
         <Cswiper/>
       </div>
+      </div>
+      <div>
+        <Video/>
       </div>
     </div>
   );
