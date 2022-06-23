@@ -8,18 +8,33 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import $ from 'jquery';
+import { useEffect } from 'react';
 export default () => {
+   
     const nextbtn = () => {
-        document.querySelector(".swiper-button-next").click();
+        $('.prev').attr('disabled',false);
+       $(".swiper-button-next").click();
+
+       if( $('.swiper-pagination-bullet-active').is(':last-child')){
+        $('.next').attr('disabled',true);
+    }
     }
     const prevbtn = () => {
-        document.querySelector(".swiper-button-prev").click();
+        $('.next').attr('disabled',false);
+       $(".swiper-button-prev").click();
+       if( $('.swiper-pagination-bullet-active').attr('aria-label')==='Go to slide 1'){
+           console.log('yes');
+           $('.prev').attr('disabled',true);
+       }
     }
+   useEffect(()=>{
+    $('.prev').attr('disabled',true);
+   })
     return (
         <div className='row align-items-center justify-content-center' style={{ height: '350px' }}>
             <div className='col-1 d-lg-block d-none'>
-                <button onClick={prevbtn} className='btn btn-secondary'>
+                <button onClick={prevbtn} className='btn btn-secondary prev'>
                     <i className='icon-arrow-left-solid fw-normal'></i>
                 </button>
             </div>
@@ -46,7 +61,7 @@ export default () => {
                         },
                     }}
                 >
-                    {[1, 2].map(e =>
+                    {[1, 2].map((index,e) =>
                         <>
                             <SwiperSlide>
                                 <div className='card-swiper'>
@@ -122,7 +137,7 @@ export default () => {
                 </Swiper>
             </div>
             <div className='col-1 d-lg-block d-none'>
-                <button onClick={nextbtn} className='btn btn-secondary'>
+                <button onClick={nextbtn} className='btn btn-secondary next'>
                     <i className='icon-arrow-right-solid fw-bold'></i>
                 </button>
             </div>
