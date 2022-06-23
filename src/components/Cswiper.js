@@ -24,7 +24,7 @@ export default () => {
                 </button>
             </div>
             <div className='col-10'>
-                <Swiper style={{height:'285px'}}
+                <Swiper style={{ height: '285px' }}
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={20}
@@ -34,74 +34,91 @@ export default () => {
                     //   scrollbar={{ draggable: false }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-                    >
-            {[1,2].map(e=>
-            <>
-                    <SwiperSlide>
-                        <div className='card-swiper p-3'>
-                            <div>
-                                <h5>ICEWAYS</h5>
-                            </div>
-                            <div>
-                                <p>
-                                    City life is changing. So are the habits of urban citizens. 4X4 cars that
-                                    were previously used only on challenging lands are now preferred for urban use.
-                                </p>
-                            </div>
-                            <div className='d-flex justify-content-between'>
-                                <div>
-                                    <a href='#' className='btn text-danger bg-warning'>Learn More</a>
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                        },
+                       1000: {
+                            slidesPerView: 2,
+                        },
+                        1400: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    {[1, 2].map(e =>
+                        <>
+                            <SwiperSlide>
+                                <div className='card-swiper'>
+                                    <div className='p-3'>
+                                        <div>
+                                            <h5>ICEWAYS</h5>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                City life is changing. So are the habits of urban citizens. 4X4 cars that
+                                                were previously used only on challenging lands are now preferred for urban use.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex justify-content-around pb-2'>
+                                        <div >
+                                            <a href='#' className='btn text-danger bg-warning'>Learn More</a>
+                                        </div>
+                                        <div>
+                                            <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='card-swiper'>
+                                    <div className='p-3'>
+                                        <div>
+                                            <h5>Driveways Sport</h5>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Driveways is a ‘’Comfort tyre’’ developed for a considerably wide vehicle pool ranging
+                                                from middle class sedans to upper class comfort automobiles.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex justify-content-around pb-2'>
+                                        <div >
+                                            <a href='#' className='btn text-danger bg-warning'>Learn More</a>
+                                        </div>
+                                        <div>
+                                            <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='card-swiper p-3'>
-                            <div>
-                                <h5>Driveways Sport</h5>
-                            </div>
-                            <div>
-                                <p>
-                                Driveways is a ‘’Comfort tyre’’ developed for a considerably wide vehicle pool ranging 
-                                from middle class sedans to upper class comfort automobiles.
-                                </p>
-                            </div>
-                            <div className='d-flex justify-content-between'>
-                                <div>
-                                    <a href='#' className='btn text-danger bg-warning'>Learn More</a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='card-swiper'>
+                                    <div className='p-3'>
+                                        <div>
+                                            <h5>Driveways COMPETUS H/P</h5>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                City life is changing. So are the habits of urban citizens. 4X4 cars that were previously
+                                                used only on challenging lands are now preferred for urban use.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex justify-content-around pb-2'>
+                                        <div >
+                                            <a href='#' className='btn text-danger bg-warning'>Learn More</a>
+                                        </div>
+                                        <div>
+                                            <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='card-swiper p-3'>
-                            <div>
-                                <h5>Driveways COMPETUS H/P</h5>
-                            </div>
-                            <div>
-                                <p>
-                                City life is changing. So are the habits of urban citizens. 4X4 cars that were previously 
-                                used only on challenging lands are now preferred for urban use.
-                                </p>
-                            </div>
-                            <div className='d-flex justify-content-between'>
-                                <div>
-                                    <a href='#' className='btn text-danger bg-warning'>Learn More</a>
-                                </div>
-                                <div>
-                                    <a href='#' className='btn text-white bg-danger'>Find a Dealer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-           </>
-            )}
+                            </SwiperSlide>
+                        </>
+                    )}
                 </Swiper>
             </div>
             <div className='col-1'>
