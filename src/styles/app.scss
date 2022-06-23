@@ -1,0 +1,59 @@
+.App {
+    overflow-x: hidden;
+
+    &>* {
+        overflow-x: hidden;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .App {
+
+
+        .collapse {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+.App {
+
+    .banner {
+        position: relative;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 464px;
+        }
+
+        .banner-desc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .title {
+                max-width: 512px;
+                margin-bottom: 2.125rem;
+            }
+
+            button {
+                color: $red;
+            }
+        }
+    }
+
+    .custom-swiper {
+        h2 {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+    }
+}
+
+
+@include media-breakpoint-down(lg) {
+    .App {}
+}
