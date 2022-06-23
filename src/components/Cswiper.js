@@ -70,7 +70,7 @@ export default () => {
                         0: {
                             slidesPerView: 1,
                         },
-                        1000: {
+                        900: {
                             slidesPerView: 2,
                         },
                         1400: {

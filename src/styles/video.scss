@@ -36,3 +36,14 @@
 .play-btn:focus {
 	outline:0;
 }
+iframe{
+    height: 738px;
+}
+
+
+@include media-breakpoint-down(md) {
+    iframe{
+        height: 200px;
+    }
+
+}
