@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
       </div>
-<div style={{background: '#F9F6F6'}} className='p-5'>
+<div style={{background: '#F9F6F6'}} className='p-lg-5'>
       <div className='container custom-swiper'>
         <h2>
           Featured Products

@@ -18,12 +18,12 @@ export default () => {
     }
     return (
         <div className='row align-items-center justify-content-center' style={{ height: '350px' }}>
-            <div className='col-1'>
+            <div className='col-1 d-lg-block d-none'>
                 <button onClick={prevbtn} className='btn btn-secondary'>
                     <i className='icon-arrow-left-solid fw-normal'></i>
                 </button>
             </div>
-            <div className='col-10'>
+            <div className='col-lg-10 col-12'>
                 <Swiper style={{ height: '285px' }}
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -121,7 +121,7 @@ export default () => {
                     )}
                 </Swiper>
             </div>
-            <div className='col-1'>
+            <div className='col-1 d-lg-block d-none'>
                 <button onClick={nextbtn} className='btn btn-secondary'>
                     <i className='icon-arrow-right-solid fw-bold'></i>
                 </button>

@@ -29,3 +29,17 @@ align-items: center;
 .btn-secondary{
     padding:11px 16px !important;
 }
+
+.bg-warning ,.bg-danger{
+font-size: 12px !important;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+
+@include media-breakpoint-down(md) {
+    .bg-warning ,.bg-danger{
+        // padding-left: 20px;
+        // padding-right: 20px;
+    }
+}
