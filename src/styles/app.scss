@@ -5,10 +5,12 @@
         overflow-x: hidden;
     }
 }
-.navbar-nav{
-   display: flex;
-   justify-content: flex-end;
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
 }
+
 @include media-breakpoint-up(lg) {
     .App {
         .collapse {
@@ -78,25 +80,27 @@
 
     .navbar-nav {
         align-items: flex-start;
-         padding-right: calc($container-padding-x + 5px);
-         padding-left: calc($container-padding-x + 5px);
+        padding-right: calc($container-padding-x + 5px);
+        padding-left: calc($container-padding-x + 5px);
 
         li {
-          
+
             display: flex;
             text-align: left;
-            width: calc(2* (#{$container-padding-x}  + 10px) + 100%);
+            width: calc(2* (#{$container-padding-x} + 10px) + 100%);
             margin-left: calc(-1 * #{$container-padding-x} - 10px);
             padding: 1rem calc($container-padding-x + 0px);
             position: relative;
-&::after{
-    content: "";
-    border-bottom: 1px solid #525252;
-    position: absolute;
-    left: calc(-8 * #{$container-padding-x});
-    right: calc(-8 * #{$container-padding-x});
-    bottom: 0;
-}
+
+            &::after {
+                content: "";
+                border-bottom: 1px solid #525252;
+                position: absolute;
+                left: calc(-8 * #{$container-padding-x});
+                right: calc(-8 * #{$container-padding-x});
+                bottom: 0;
+            }
+
             a {
                 font-weight: 600;
                 font-size: 14px;

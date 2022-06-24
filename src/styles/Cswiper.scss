@@ -12,44 +12,52 @@
     text-align: left;
     border-bottom: 4px solid #ED1C24 !important;
 
-    .card-text{
-       height: 130px;
-       padding-bottom: 10px;
-       overflow-y: auto;
-       font-size: $font-size-sm;
-       line-height: 1.57;
+    .card-text {
+        height: 130px;
+        padding-bottom: 10px;
+        overflow-y: auto;
+        font-size: $font-size-sm;
+        line-height: 1.57;
     }
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
     width: 6px !important;
     height: 6px !important;
 }
+
 .swiper-pagination-bullet-active {
     background-color: $danger !important;
     width: 12px !important;
     height: 12px !important;
 }
+
 .swiper-pagination {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.btn-secondary{
-    padding:11px 16px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg-warning ,.bg-danger{
-font-size: 12px !important;
- padding-left: 40px;
- padding-right: 40px;
+.btn-secondary {
+    padding: 11px 16px !important;
 }
-h5{
+
+.bg-warning,
+.bg-danger {
+    font-size: 12px !important;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h5 {
     font-weight: 600;
     line-height: 1.35;
 }
 
 @include media-breakpoint-down(md) {
-    .bg-warning ,.bg-danger{
+
+    .bg-warning,
+    .bg-danger {
         // padding-left: 20px;
         // padding-right: 20px;
     }
