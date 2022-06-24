@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/card-scetch/static/css/main.df82b09a.css",
-    "main.js": "/card-scetch/static/js/main.54eb2643.js",
+    "main.js": "/card-scetch/static/js/main.f23998fc.js",
     "static/js/787.4dc6009a.chunk.js": "/card-scetch/static/js/787.4dc6009a.chunk.js",
     "static/media/Sora-SemiBold.ttf": "/card-scetch/static/media/Sora-SemiBold.514ec7d41fb34b5676d7.ttf",
     "static/media/Sora-Medium.ttf": "/card-scetch/static/media/Sora-Medium.210cba756613e7cd75de.ttf",
@@ -16,11 +16,11 @@
     "static/media/right-list-arrow.svg": "/card-scetch/static/media/right-list-arrow.a07fba2d468761e42fcf.svg",
     "static/media/navbar-s.svg": "/card-scetch/static/media/navbar-s.e16c51aa73fb2636305f.svg",
     "main.df82b09a.css.map": "/card-scetch/static/css/main.df82b09a.css.map",
-    "main.54eb2643.js.map": "/card-scetch/static/js/main.54eb2643.js.map",
+    "main.f23998fc.js.map": "/card-scetch/static/js/main.f23998fc.js.map",
     "787.4dc6009a.chunk.js.map": "/card-scetch/static/js/787.4dc6009a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df82b09a.css",
-    "static/js/main.54eb2643.js"
+    "static/js/main.f23998fc.js"
   ]
 }
