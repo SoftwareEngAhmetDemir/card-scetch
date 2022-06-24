@@ -55,7 +55,7 @@ export default () => {
                     Featured Products
                 </h3>
                 <div className='row align-items-center justify-content-center' style={{ height: '350px' }}>
-                    <div className='col-1 d-lg-block d-none'>
+                    <div className='col-1 d-none d-lg-flex justify-content-end'>
                         <button onClick={prevbtn} className='btn btn-secondary prev'>
                             <i className='icon-arrow-left-solid fw-normal'></i>
                         </button>
