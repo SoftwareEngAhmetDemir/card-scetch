@@ -13,7 +13,8 @@ function App() {
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+         <div className='header'>
+         <a class="navbar-brand" href="#">
             <img src='./assets/images/logo.svg' />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -21,6 +22,7 @@ function App() {
           aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+         </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
