@@ -8,8 +8,6 @@
 
 @include media-breakpoint-up(lg) {
     .App {
-
-
         .collapse {
             display: flex;
             justify-content: end;
@@ -56,21 +54,54 @@
 @include media-breakpoint-down(lg) {
     .navbar-expand-lg {
         z-index: 999999999;
-      padding: 10px !important;
-        // background-color: $body-color !important;
+        padding: 10px 0 !important;
     }
-    .navbar{
+
+    .navbar {
         position: fixed;
         left: 0;
         right: 0;
         top: 0;
     }
+
     .header {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 46px !important;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 46px !important;
     }
+
+    .navbar-nav {
+        align-items: flex-start;
+        padding-right: calc($container-padding-x + 10px);
+        padding-left: calc($container-padding-x + 10px);
+
+        li {
+            border-bottom: 1px solid #525252;
+            display: flex;
+            text-align: left;
+            width: calc(2* ($container-padding-x + 10px) + 100%);
+            margin-left: calc(-1 * #{$container-padding-x} - 10px);
+            padding: 1rem calc($container-padding-x + 5px);
+            position: relative;
+
+            a {
+                font-weight: 600;
+                font-size: 14px;
+                color: #ffff !important;
+                display: block;
+                width: 100%;
+
+                &::after {
+                    content: url("../../public/assets/images/right-list-arrow.svg");
+                    position: absolute;
+                    right: calc($container-padding-x + 10px);
+                }
+            }
+        }
+
+    }
+
     .navbar-collapse {
         background-color: $body-color !important;
         position: fixed;
@@ -79,6 +110,20 @@
         left: 0;
         right: 0;
         z-index: 999999999;
+    }
+
+
+    .navbar-toggler.collapsed {
+        background-image: url("../../public/assets/images/navbar-s.svg");
+    }
+
+    .navbar-toggler {
+        width: 50px;
+        height: 40px;
+        background-image: url("../../public/assets/images/close.svg");
+        background-repeat: no-repeat;
+        background-size: 50px 40px;
+
     }
 
 }

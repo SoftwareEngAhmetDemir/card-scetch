@@ -13,16 +13,15 @@ function App() {
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-         <div className='header'>
-         <a class="navbar-brand" href="#">
-            <img src='./assets/images/logo.svg' />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-          aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-         </div>
+          <div className='header'>
+            <a class="navbar-brand" href="#">
+              <img src='./assets/images/logo.svg' />
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -67,17 +66,17 @@ function App() {
           </div>
         </div>
       </div>
-<div style={{background: '#F9F6F6'}} className='p-lg-5'>
-      <div className='container custom-swiper'>
-        <h2>
-          Featured Products
-        </h2>
+      <div style={{ background: '#F9F6F6' }} className='p-lg-5 py-5'>
+        <div className='container custom-swiper'>
+          <h2>
+            Featured Products
+          </h2>
 
-        <Cswiper/>
-      </div>
+          <Cswiper />
+        </div>
       </div>
       <div>
-        <Video/>
+        <Video />
       </div>
     </div>
   );
