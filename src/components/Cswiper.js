@@ -61,7 +61,7 @@ export default () => {
                         </button>
                     </div>
                     <div className='col-lg-10 col-12'>
-                        <Swiper style={{ height: '285px' }}
+                        <Swiper style={{ height: '300px' }}
                             // install Swiper modules
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
                             spaceBetween={20}

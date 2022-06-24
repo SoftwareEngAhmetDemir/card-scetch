@@ -11,7 +11,7 @@
     border-radius: 2px;
     text-align: left;
     border-bottom: 4px solid #ED1C24 !important;
-
+   
     .card-text {
         height: 130px;
         padding-bottom: 10px;
@@ -52,13 +52,4 @@
 h5 {
     font-weight: 600;
     line-height: 1.35;
-}
-
-@include media-breakpoint-down(md) {
-
-    .bg-warning,
-    .bg-danger {
-        // padding-left: 20px;
-        // padding-right: 20px;
-    }
 }
