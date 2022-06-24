@@ -11,7 +11,7 @@ function App() {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
           <div className='header'>
             <a class="navbar-brand" href="#">
@@ -23,7 +23,8 @@ function App() {
             </button>
           </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div className='container'>
+          <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">Show All Tyres</a>
               </li>
@@ -51,6 +52,7 @@ function App() {
               </li> */}
             </ul>
           </div>
+          </div>
         </div>
       </nav>
 
@@ -68,9 +70,9 @@ function App() {
       </div>
       <div style={{ background: '#F9F6F6' }} className='p-lg-5 py-5'>
         <div className='container custom-swiper'>
-          <h2>
+          <h3>
             Featured Products
-          </h2>
+          </h3>
 
           <Cswiper />
         </div>

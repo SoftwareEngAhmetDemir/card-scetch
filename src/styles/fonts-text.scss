@@ -1,0 +1,24 @@
+$base-url: '../fonts/texts/';
+@font-face {
+    font-family: 'Sora';
+    src:  url($base-url+'Sora-Regular.ttf');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Sora';
+    src:  url($base-url+'Sora-Bold.ttf');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Sora';
+    src:  url($base-url+'Sora-SemiBold.ttf');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Sora';
+    src:  url($base-url+'Sora-Medium.ttf');
+    font-weight: 500;
+  }

@@ -7,12 +7,12 @@ function Video() {
         <div className='video'>
             <div className='container'>
                 <div className='row pad'>
-                    <div className='col-lg-5 order-0'>
-                        <h1 className='text-white fs-2 mb-5'>
+                    <div className='col-lg-6 order-0'>
+                        <h2 className='text-white mb-5 text-start'>
                             Feel the excellent wet braking with Driveways!
-                        </h1>
+                        </h2>
                     </div>
-                    <div className='offset-lg-4 col-lg-3 col-12 order-lg-1 order-2 my-4'>
+                    <div className='offset-lg-3 col-lg-3 col-12 order-lg-1 order-2 my-4'>
                         <button className='btn btn-primary text-danger fw-bold w-100' 
                         style={{ padding: '13px 24px' }}>Watch All Videos</button>
                     </div>
@@ -24,7 +24,6 @@ function Video() {
                                 <img src='./assets/images/ytb.svg' />
                             </button>
                         </div>
-                    
                 </div>
             </div>
         </div>

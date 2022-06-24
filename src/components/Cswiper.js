@@ -82,18 +82,18 @@ export default () => {
                         <>
                             <SwiperSlide>
                                 <div className='card-swiper'>
-                                    <div className='p-3'>
+                                    <div className='p-3 pb-2'>
                                         <div>
                                             <h5>ICEWAYS</h5>
                                         </div>
-                                        <div>
+                                        <div className='card-text'>
                                             <p>
                                                 City life is changing. So are the habits of urban citizens. 4X4 cars that
                                                 were previously used only on challenging lands are now preferred for urban use.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className='d-flex justify-content-around pb-2'>
+                                    <div className='d-flex justify-content-around'>
                                         <div >
                                             <a href='#' className='btn text-danger bg-warning'>Learn More</a>
                                         </div>
@@ -105,11 +105,11 @@ export default () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='card-swiper'>
-                                    <div className='p-3'>
+                                    <div className='p-3 pb-2'>
                                         <div>
                                             <h5>Driveways Sport</h5>
                                         </div>
-                                        <div>
+                                        <div className='card-text'>
                                             <p>
                                                 Driveways is a ‘’Comfort tyre’’ developed for a considerably wide vehicle pool ranging
                                                 from middle class sedans to upper class comfort automobiles.
@@ -128,11 +128,11 @@ export default () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='card-swiper'>
-                                    <div className='p-3'>
+                                    <div className='p-3 pb-2'>
                                         <div>
                                             <h5>Driveways COMPETUS H/P</h5>
                                         </div>
-                                        <div>
+                                        <div className='card-text'>
                                             <p>
                                                 City life is changing. So are the habits of urban citizens. 4X4 cars that were previously
                                                 used only on challenging lands are now preferred for urban use.

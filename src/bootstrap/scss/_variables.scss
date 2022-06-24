@@ -528,7 +528,7 @@ $aspect-ratios: ("1x1": 100%,
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui,
+$font-family-sans-serif: "Sora",system-ui,
 -apple-system,
 "Segoe UI",
 Roboto,
@@ -572,8 +572,8 @@ $line-height-sm: 1.25 ;
 $line-height-lg: 2 ;
 
 $h1-font-size: $font-size-base * 3.56 ;
-$h2-font-size: $font-size-base * 2.32 ;
-$h3-font-size: $font-size-base * 1.75 ;
+$h2-font-size: $font-size-base * 2.5 ;
+$h3-font-size: $font-size-base * 2.01 ;
 $h4-font-size: $font-size-base * 1.5 ;
 $h5-font-size: $font-size-base * 1.25 ;
 $h6-font-size: $font-size-base ;
@@ -592,7 +592,7 @@ $font-sizes: (1: $h1-font-size,
 $headings-margin-bottom: $spacer * .5 ;
 $headings-font-family: null ;
 $headings-font-style: null ;
-$headings-font-weight: 500 ;
+$headings-font-weight: 700 ;
 $headings-line-height: $line-height-sm ;
 $headings-color: #400E03 ;
 // scss-docs-end headings-variables
@@ -1052,9 +1052,9 @@ $zindex-tooltip: 1080 ;
 // scss-docs-start nav-variables
 $nav-link-padding-y: .5rem ;
 $nav-link-padding-x: 1rem ;
-$nav-link-font-size: null ;
-$nav-link-font-weight: null ;
-$nav-link-color: $link-color ;
+$nav-link-font-size: 0.875rem ;
+$nav-link-font-weight: 600 ;
+$nav-link-color: $gray-600 !important ;
 $nav-link-hover-color: $link-hover-color ;
 $nav-link-transition: color .15s ease-in-out,
 background-color .15s ease-in-out,

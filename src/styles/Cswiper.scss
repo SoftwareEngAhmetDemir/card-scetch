@@ -11,6 +11,14 @@
     border-radius: 2px;
     text-align: left;
     border-bottom: 4px solid #ED1C24 !important;
+
+    .card-text{
+       height: 130px;
+       padding-bottom: 10px;
+       overflow-y: auto;
+       font-size: $font-size-sm;
+       line-height: 1.57;
+    }
 }
 .swiper-pagination-bullet{
     width: 6px !important;
@@ -35,7 +43,10 @@ font-size: 12px !important;
  padding-left: 40px;
  padding-right: 40px;
 }
-
+h5{
+    font-weight: 600;
+    line-height: 1.35;
+}
 
 @include media-breakpoint-down(md) {
     .bg-warning ,.bg-danger{

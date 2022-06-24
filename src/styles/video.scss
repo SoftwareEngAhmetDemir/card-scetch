@@ -1,49 +1,56 @@
-.video{
-    background-color: $gray-200;
-    
+.video {
+	background-color: $gray-200;
+
 }
-.pad{
-   padding-top: 40px !important;
-   padding-bottom: 36px !important;
+
+.pad {
+	padding-top: 40px !important;
+	padding-bottom: 36px !important;
 }
+
 .wrapper {
-	position:relative;
+	position: relative;
 }
 
 .wrapper img {
-	max-width:100%;
-	height:auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .wrapper iframe {
-	display:none;
+	display: none;
 }
 
 .play-btn {
-	position:absolute;
-	z-index:666;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	background-color:transparent;
-	border:0;
+	position: absolute;
+	z-index: 666;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	border: 0;
 }
 
 .play-btn:hover {
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .play-btn:focus {
-	outline:0;
+	outline: 0;
 }
-iframe{
-    height: 738px;
+
+iframe {
+	height: 738px;
 }
 
 
 @include media-breakpoint-down(md) {
-    iframe{
-        height: 200px;
-    }
+	iframe {
+		height: 200px;
+	}
 
+	h2 {
+		font-size: 1.5rem;
+		line-height: 30px;
+	}
 }
