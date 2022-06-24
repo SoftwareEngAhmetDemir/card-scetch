@@ -8,4 +8,4 @@ _ i used :
 1.<b> React.js </b>
 2. <b>BootStrap </b>
 3. <b>Swiper.js </b>
-
+4. <b>JQuery </b>
